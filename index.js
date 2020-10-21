@@ -72,7 +72,7 @@ const chart = new CanvasJS.Chart("chartContainer",
     animationEnabled: true,
     theme: "light1",
     title: {
-        text: "Estadísticas"              
+        text: "Habilidades"              
     },
     axisY:{
         minimum: 0,
