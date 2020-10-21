@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Lato', sans-serif;
+    color: rgb(245, 229, 4);
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html, body{
+    height:100%;
+  }
+ h1{
+     padding-top: 20px;
+     text-decoration-color: darkslategrey;
+ } 
+  .contenedor{
+      background: url(https://images.hdqwalls.com/download/pokeball-ad-2560x1700.jpg) no-repeat center ;
+        height: 100%;
+       background-size:     cover;                  
+      background-repeat:   no-repeat;
+      background-position: center center;
+  }
+  .consulta, .respuesta__contenido, .respuesta__grafico {
+    display: -webkit-flex;
+    display: ruby-text;
+    justify-content: center;
+    margin-top: 5vh;
+  }
+  .consulta__contenido{
+    background-color: rgb(10, 0, 0);
+    border-bottom: 2px solid darkslategrey;
+    padding: 2.5% 10%;
+    box-shadow: black;   
+  }
+  .consulta__titulo {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  .consulta__instrucciones {
+    font-size: 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+  }
+  .consulta__formulario {
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .consulta__formulario input{
+    padding: 1.25% 2.5%;
+    font-size: 1rem;
+    margin: 0 5px;
+    font-family: 'Lato', sans-serif;
+    color: darkslategray;
+  }
+  .invisible {
+    display: none;
+  }
+  .respuesta__contenido {
+    align-items: center;
+  }
+  .respuesta__titulo {
+    text-transform: capitalize;
+  }
+  .respuesta__texto {
+    margin-left: 25px;
+  }
+  .visible {
+    display: block;
+  }
+  #chartContainer{
+    height: 300px;
+    width: 500px;
+  }

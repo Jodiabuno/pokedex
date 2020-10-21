@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokedex</title>
+  <link rel="stylesheet" href="assets/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="contenedor d-flex justify-content-center">
+    <div class="row">
+     <div class="col-lg-12 d-flex justify-content-center align-items-center">
+      <h1 class="consulta__titulo">POKEDEX, Una PokeAPI</h1>
+     </div>
+    </div>
+
+  <section class="consulta">
+    <div class="consulta__contenido">
+      <p class="consulta__instrucciones">Ingrese número o nombre del Pókemon que desea buscar</p>
+      <form id="pokeform" class="consulta__formulario">
+        <input type="text" id="pokeInput" class="formulario__info">
+        <input type="submit" id="pokeSubmit" class="formulario__boton" value="Consultar">
+      </form>
+    </div>
+  </section>
+  <section id="respuesta" class="invisible">
+    <div class="respuesta__contenido">
+      <img src="assets/img/not-found.PNG" 
+           alt="Pokemon Sprite" 
+           class="respuesta__imagen"
+           id="pokeImg">
+      <div class="respuesta__texto" id="pokeData">
+        <h2 class="respuesta__titulo"></h2>
+        <p class="respuesta__descripcion"></p>
+      </div>
+    </div>
+    <div class="respuesta__grafico" id="grafico">
+      <div id="chartContainer">
+        
+      </div>
+    </div>
+    
+  </section>
+</div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"  
+          integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="  
+          crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/canvasjs/1.7.0/canvasjs.min.js" ></script>
+  <script src="index.js"></script>
+</body>
+</html>
